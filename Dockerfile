@@ -1,4 +1,3 @@
-# Use latest jboss/base-jdk:7 image as the base
 FROM jboss/base-jdk:8
 
 ENV JBOSS_VERSION jboss-eap-6.4.0
