@@ -3,11 +3,11 @@ Dockerfile for help to someone who needs to create a docker container for develo
 
 * You need download the jboss-eap-6.4.0.zip from `http://developers.redhat.com` because we are not able to redistribute this versión according our development purpose.  Please review `http://developers.redhat.com/terms-and-conditions/`
 * Then you build the image `` docker build -t jboss-eap:6.4.0 . ``
-* Finally you should start the JBoss with some like `` docker run --name jboss-eap-6.4.0 -p 8085:8080 -p 9995:9990 -d jboss-eap:6.4.0 ``
+* Finally you should start the JBoss with some like `` docker run --name jboss-eap-6.4.0 -p 18080:8080 -p 19990:9990 -p 19999:9999 -d jboss-eap:6.4.0 ``
 
 You have access, according with the run command:
-* For applications: `http://localhost:8085/`
-* Console: `http://localhost:9995/`
+* For applications: `http://localhost:18080/`
+* Console: `http://localhost:19990/`
 
 The credentials for console access are:
 - User: admin
