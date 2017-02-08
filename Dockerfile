@@ -13,7 +13,7 @@ RUN yum install -y unzip \
     && export EAP_HOME=$EAP_HOME \
     && $EAP_HOME/bin/add-user.sh admin welcome1! --silent
 
-EXPOSE 8080 9990
+EXPOSE 8080 9990 9999
 
 WORKDIR $EAP_HOME/bin
 ENTRYPOINT ["./standalone.sh", "-b", "0.0.0.0", "-bmanagement", "0.0.0.0"]
